@@ -1,0 +1,25 @@
+{
+  "name": "sportsclubmanagementsystem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ui-mode": "playwright test --ui",
+    "ui-challenge-workflow-tests": "playwright test tests/ui/e2e-tests/challenge-workflow-test.spec.ts",
+    "tag-tests": "playwright test tests/ui/e2e-tests --grep @regression",
+    "html-report": "playwright show-report",
+    "allure-report": "allure serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0",
+    "allure-playwright": "^3.3.3"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "dotenv": "^17.2.1"
+  }
+}

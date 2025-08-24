@@ -1,0 +1,10 @@
+{
+    "WEB":{
+        "DASHBOARD":"/#/dashboard",
+        "LOGIN":"/#/auth/login"
+    },
+    "API":{
+        "LOGIN":"/api/auth/login",
+        "REGISTER":"/api/auth/register"
+    }
+}
