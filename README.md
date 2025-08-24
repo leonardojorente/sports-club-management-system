@@ -48,7 +48,9 @@ run local:
 
 run remote:
 1- open https://github.com/leonardojorente/sports-club-management-system/actions/workflows/playwright.yml
-2-
+2- click run workflow
+3- select prod env
+4- execute
 
 
 
