@@ -20,10 +20,10 @@ jobs:
     environment: ${{ github.event.inputs.environment }}
 
     env:
-      USER:  ${{ secrets.USER }}
+      USER:  ${{ vars.USER }}
       PASSWORD: ${{ secrets.PASSWORD }}
-      BASE_URL_WEB: ${{ secrets.BASE_URL_WEB }} 
-      BASE_URL_API: ${{ secrets.BASE_URL_API }}
+      BASE_URL_WEB: ${{ vars.BASE_URL_WEB }} 
+      BASE_URL_API: ${{ vars.BASE_URL_API }}
   
     steps:
       - name: check environment variables content

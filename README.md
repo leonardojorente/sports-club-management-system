@@ -34,6 +34,7 @@ See the [Playwright Docs](https://playwright.dev/docs/intro) for more details.
 - use of fixtures + page objects to improve reading
 - use of steps to improve test reading
 - use of tag @regression for possible
+- added possibility to use multiples environments on CI execution
 
 ## Code explanation
 
