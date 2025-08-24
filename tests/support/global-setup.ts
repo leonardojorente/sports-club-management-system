@@ -13,7 +13,6 @@ async function globalSetup() {
   const responseBody = await response.json();
 
   process.env.API_TOKEN = `Bearer ${responseBody.token}`
-  console.log('Token generated for API tests: ' + process.env.API_TOKEN);
 }
 
 export default globalSetup;

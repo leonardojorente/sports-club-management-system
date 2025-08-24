@@ -33,7 +33,6 @@ jobs:
     steps:
       - name: check environment variables content
         run: | #it sets multiple lines for the echo command
-          echo "The environment is $environment"
           echo "Base URL web is $BASE_URL_WEB"
           echo "Base URL API is $BASE_URL_API"
           echo "USER is $USER"

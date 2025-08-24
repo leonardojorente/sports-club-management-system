@@ -21,7 +21,7 @@ test.describe('Challenge workflow for Qubika Sports Club Management System', () 
     });
 
     await test.step('2 - Go to Qubika Sports Club Management System', async () => {
-      await page.goto(RelativePath.WEB.LOGIN);
+      await page.goto(RelativePath.WEB.LOGIN, { timeout: 45000 });
     });
 
     await test.step('3 - Validate that the login page is displayed correctly', async () => {
@@ -50,7 +50,6 @@ test.describe('Challenge workflow for Qubika Sports Club Management System', () 
       await addCategoryComponent.clickcreateCategoryBtn()
       await expect(toastComponent.toastMessage('Tipo de categoría adicionada satisfactoriamente')).toBeVisible();
       await expect(toastComponent.toastMessage('Tipo de categoría adicionada satisfactoriamente')).not.toBeVisible();
-
     });
 
     await test.step('6c - Create a sub category and validate it is displayed in the Categories list', async () => {
