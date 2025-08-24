@@ -47,6 +47,8 @@ run local:
 5- execute: npm run allure-report
 
 run remote:
+1- open https://github.com/leonardojorente/sports-club-management-system/actions/workflows/playwright.yml
+2-
 
 
 
